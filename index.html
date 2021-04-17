@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="module" src="/index.js"></script>
+    <style>
+        body{
+            margin: 0;
+            background-color: darkslategrey;
+        }
+        .meter{
+            position: fixed;
+            top: 0;
+            left: 0;
+            //color: aliceblue;
+            font-size: 5px;
+            user-select: none;
+        }
+    </style>
 </head>
 <body>
-<canvas id="world" style="width: 100%;image-rendering: pixelated"></canvas>
+<canvas id="world" style="width: 90%;image-rendering: pixelated"></canvas>
+<div class="meter">
 <p id="fps"></p>
+<p id="tps"></p>
+</div>
+
 </body>
 </html>
